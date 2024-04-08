@@ -11,6 +11,8 @@ jobs:
         with:
           repository: LinuxRocks2000/sitix-rewrite
           ref: master
+          path: sitix-rewrite
+      - uses: actions/checkout@v2
       - name: Sitix build
         run: |
              echo "hi"
