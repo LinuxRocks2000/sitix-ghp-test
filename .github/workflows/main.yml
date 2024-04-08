@@ -15,7 +15,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           path: sitix-ghp-test
+      - uses: actions/cmake-action@v1.3.0
+        with:
+          source-dir: sitix-rewrite
       - name: Sitix build
         run: |
-             echo "hi"
-             ls -la
+          ls -la sitix-rewrite
+          ls -la sitix-rewrite/build
