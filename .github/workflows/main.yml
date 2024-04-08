@@ -25,4 +25,4 @@ jobs:
              git config --global user.email notan@emailaddr.ess
              git add .
              git commit -am "automated build"
-             git push -f git@github.com:LinuxRocks2000/sitix-ghp-test.git main:gh-pages 
+             git push -f git@github.com:LinuxRocks2000/sitix-ghp-test.git gh-pages 
