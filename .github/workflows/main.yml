@@ -10,5 +10,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: Sitix build
         run: |
-             echo Hello, World
-             ls -a
+             git clone git@github.com:LinuxRocks2000/sitix-rewrite.git
+             cd sitix-rewrite
+             mkdir build
+             cd build
+             cmake ..
+             cmake --build .
