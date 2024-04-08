@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           name: LinuxRocks2000/sitix-rewrite
-          ref: refs/head/master
+          ref: master
       - name: Sitix build
         run: |
              echo "hi"
