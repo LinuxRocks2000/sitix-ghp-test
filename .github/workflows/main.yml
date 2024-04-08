@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          name: LinuxRocks2000/sitix-rewrite
+          repository: LinuxRocks2000/sitix-rewrite
           ref: master
       - name: Sitix build
         run: |
