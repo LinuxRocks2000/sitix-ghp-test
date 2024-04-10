@@ -18,12 +18,13 @@ jobs:
       - name: Build website
         run: |
              cd sitix-ghp-test
+             git checkout gh-pages
              ../sitix-rewrite/bin/sitix-ubuntu site -o gh-pages
-             cd gh-pages
-             git init
-             git branch -m gh-pages
+             mv gh-pages ..
+             rm -rf site
+             mv ../gh-pages/* .
              git config --global user.name Robot
              git config --global user.email notan@emailaddr.ess
              git add .
              git commit -am "automated build"
-             git push -f git@github.com:LinuxRocks2000/sitix-ghp-test.git gh-pages 
+             git push -f origin gh-pages 
