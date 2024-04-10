@@ -28,4 +28,4 @@ jobs:
              git add .
              git commit -am "automated build"
              git branch
-             git push --force origin gh-pages:gh-pages 
+             git push --force origin master:gh-pages 
