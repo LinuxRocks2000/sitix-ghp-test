@@ -27,4 +27,5 @@ jobs:
              git config --global user.email notan@emailaddr.ess
              git add .
              git commit -am "automated build"
+             git branch
              git push --force origin gh-pages:gh-pages 
